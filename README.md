@@ -47,11 +47,11 @@ Man kan med  fordel anvende Messaging til microservices frem for teknologier som
 
 ## REST
 
-*Høj kobling*
-Man vil ikke kunne lave et system uden kobling. Med RESTful services antages der at dataen altid kun leveres til samme sted. Problemet opstår når der i fremtiden implementeres nye komponenter der har brug for dataen. Selvfølgelig kan koden opdateres så den understøtter et nyt endpoint, men dette medfører unødvendig kobling, hvilket strider mod pointen med microservices.
+*Høj kobling:*
+- Man vil ikke kunne lave et system uden kobling. Med RESTful services antages der at dataen altid kun leveres til samme sted. Problemet opstår når der i fremtiden implementeres nye komponenter der har brug for dataen. Selvfølgelig kan koden opdateres så den understøtter et nyt endpoint, men dette medfører unødvendig kobling, hvilket strider mod pointen med microservices.
 
-*Blocking*
-Når du initialisere en RESTful service, blokerer din service alt andet trafik mens den venter på et respons. Dette gør applikationen langsom, gør multithreading umuligt og ligeledes er applikationen ikke skalerbar. 
+*Blocking:*
+- Når du initialisere en RESTful service, blokerer din service alt andet trafik mens den venter på et respons. Dette gør applikationen langsom, gør multithreading umuligt og ligeledes er applikationen ikke skalerbar. 
 
 ## Messaging
 
