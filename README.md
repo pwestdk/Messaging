@@ -55,14 +55,14 @@ Når du initialisere en RESTful service, blokerer din service alt andet trafik m
 
 ## Messaging
 
-**Lav kobling**
-Ved anvendelsen af messaging har de forskellige services ikke kendskab til hinanden. Hver service informeres når de skal processere ny information. Den nye information kan nu consumes af en vilkårlig service. Lav kobling gør microservicesne klar til fremtidige ændringer i projektet. 
+**Lav kobling:**
+- Ved anvendelsen af messaging har de forskellige services ikke kendskab til hinanden. Hver service informeres når de skal processere ny information. Den nye information kan nu consumes af en vilkårlig service. Lav kobling gør microservicesne klar til fremtidige ændringer i projektet. 
 
-**Ingen blocking**
-Messaging gør asynkronitet muligt. Dette tillader microservices at arbejde multithreaded. Vi kan altså med messaging sende requests og processere samtidigt i stedet for at vente på et respons. 
+**Ingen blocking:**
+- Messaging gør asynkronitet muligt. Dette tillader microservices at arbejde multithreaded. Vi kan altså med messaging sende requests og processere samtidigt i stedet for at vente på et respons. 
 
-**Simpel skalering**
-Grundet lav kobling og asynkrone beskeder er messaging meget skalerbart. 
+**Simpel skalering:**
+- Grundet lav kobling og asynkrone beskeder er messaging meget skalerbart. 
 
 # Diskussion 
 
