@@ -2,38 +2,10 @@
 ##### Gruppe A1: Emilie Hinsch Nielsen & Philip West Christiansen
 ##### Efterår 2018 -  Afleveret: 10/12/2018
 
-# Table of Contents
-<!--ts-->
-  * [Introduction](#introduction)  
-  * [Process](#process)    
-      * [Collaboration summary](#collaboration-summary)   
-      * [Meetings](#meetings)   
-          * [31/10/2018 - Introduction meeting](#31102018---introduction-meeting)
-          * [07/11/2018 - First official meeting](#07112018---first-official-meeting)
-          * [12/11/2018 - Showing of results, subject change RFID and LIFI](#12/11/2018-showing-of-results,-subject-change-RFID-and-LIFI)
-          * [14/11/2018 - Showing of results, subject change foodwaste](#14112018---showing-of-results-subject-change-foodwaste)
-          * [19/11/2018 - Showing our results, subject change to Countries with most frequent RFID use](#19112018---showing-our-results-subject-change-to-countries-with-most-frequent-rfid-use)
-          * [22/11/2018 - Subject change back to original subject](#22112018---subject-change-back-to-original-subject)
-          * [29/11/2018 - Update meeting](#29112018---update-meeting)
-      * [Contact forum](#contact-forum) 
-  * [Contract](#contract) 
-      * [Product](#product)   
-      * [Pricing](#pricing)   
-      * [Team](#team)   
-      * [Delivery date](#delivery-date)
-  * [Billing](#billing) 
-  * [Final product](#final-product) 
-  * [User documentation](#user-documentation) 
-  * [Data sources](#data-sources) 
-  * [Technical documentation](#technical-documentation)                                      
-      * [Datasets formatting](#datasets-formatting)   
-          * [Formatting original datasets](#formatting-original-datasets)
-          * [joining the datasets](#joining-the-datasets)
-          * [Graphs](#graphs) 
-      * [Showing our product](#showing-our-product)                                     
-<!--ts-->
+# Indholdsfortegnelse
 
 # Bliv Microservice pro med RabbitMQ!
+
 
 ![alt text](https://cdn-images-1.medium.com/max/1600/1*UnYL-2r54_7AnEwQv0cVxA.png "RabbitMQ")
 
@@ -49,7 +21,7 @@ Der er mange forskellige teknologier man kan anvende for at opnå kommunikation 
 
 Vi vil ligeledes se på hvad der gør messaging unikt og hvorfor du i visse tilfælde fordelagtigt vil kunne anvende messaging  frem for andre teknologier. Dette skal ikke fremstå som messaging VS the world, men i stedet give dig en grundlæggende introduktion til hvad messaging er og i hvilken sammenhænge det succesfuldt kan anvendes.
 
-**Vi håber at når du har læst denne blog, har lyst til at prøve messaging af i et fremtidigt projekt. **
+**Vi håber at når du har læst denne blog, har lyst til at prøve messaging af i et fremtidigt projekt.**
 
 # Hvad er messaging
 Ved integrationsløsninger er der mange udfordringer at overkomme. Data skal transporteres fra computer til computer på tværs af netværk. Dette afføder forsinkelser, afbrydelser og er desuden langsomt. 
