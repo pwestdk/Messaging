@@ -1,6 +1,6 @@
 # Blog
 ##### Gruppe A1: Emilie Hinsch Nielsen & Philip West Christiansen
-##### Efterår 2018 -  Afleveret: 10/12/2018
+##### Efterår 2018 -  Afleveret: 10/12/2018 & 20/12/2018
 
 # Bliv microservice pro med messaging!
 
@@ -11,7 +11,7 @@ Microservices har som udgangspunkt ikke mulighed for at kommunikere med hinanden
 Hvordan etablerer man bedst muligt kommunikation mellem microservices, der tillader både kompleksitet og fleksibilitet? 
 
 # Introduktion
-Der er mange forskellige teknologier der kan anvendes for at opnå kommunikation mellem microservices. Dem du sandsynligvis har brugt mest er REST og SOAP. En du muligvis ikke har hørt om er messaging queues. 
+Der er mange forskellige teknologier der kan anvendes for at opnå kommunikation mellem microservices. Dem du sandsynligvis har brugt mest er [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) og [SOAP](https://en.wikipedia.org/wiki/SOAP). En du muligvis ikke har hørt om er messaging queues. 
 Ligesom REST, har messaging queues mange fordele, og blandt andet disse vil vi fokusere på i denne blog. 
 
 Vi vil undersøge hvad der gør messaging queues unikke og i hvilke tilfælde du fordelagtigt vil kunne anvende messaging.
@@ -20,7 +20,7 @@ Dette skal ikke fremstå som messaging queues VS the world, men i stedet give di
 **Vi håber at når du har læst denne blog, har lyst til at prøve messaging queues af i et fremtidigt projekt.**
 
 # Hvad er messaging
-Messaging via queues er en teknologi der tillader, asynkront, at sende information, systemer imellem. Ved integrationsløsninger er der mange udfordringer at overkomme. Data skal transporteres fra computer til computer på tværs af netværk. Dette afføder forsinkelser, afbrydelser og er desuden langsomt. 
+Messaging via queues er en teknologi der tillader, asynkront, at sende information, systemer imellem *(Enterprise Integration Patterns side 13)*. Ved integrationsløsninger er der mange udfordringer at overkomme. Data skal transporteres fra computer til computer på tværs af netværk. Dette afføder forsinkelser, afbrydelser og er desuden langsomt. 
 
 Systemerne der integreres kan benytte sig af forskellige programmeringssprog, OS, dataformater osv. Derudover ændrer systemerne sig over tid og kræver derfor løs kobling. 
 
@@ -35,13 +35,13 @@ Messaging queues fungerer ved at man sender pakker af data til hinanden. Disse p
 
 En message består af en header og en body. Headeren indeholder meta-data om, hvem afsender er, hvor den skal hen osv. Headeren bliver primært brugt af messagingsystemet.
 Bodyen indeholder selve dataen og bliver primært brugt af modtager systemet. 
-Disse messages bliver sendt via såkaldte channels, måske bedre kendt som queues.
+Disse messages bliver sendt via såkaldte channels, måske bedre kendt som queues (Enterprise Integration Patterns side 13).
 
 Helt konkret er datastrukturen for en channel en collection eller array, hvor henholdsvis producer og consumer kan bruge. Datastrukturen for en message kan være så simpel som en streng, et bytearray eller objekt. 
 
 **Hvem styrer hele dette menageri spørger du så?**
 
-Det gør messaging systemet. Det er kommandocentralen der sørger for at modtage og sende messages korrekte channels.
+Det gør messaging systemet. Det er kommandocentralen der sørger for at modtage og sende messages korrekte channels (Enterprise Integration Patterns side 14).
 I praksis kan programmer kun tilgå køerne gennem eksterne services for messaging systemet. De kan åbne en kø, putte en message på den, hente messages og lukke køer. 
 
 # Fordele med messaging queues
@@ -76,9 +76,23 @@ Vi håber på at vi har givet dig mod til at prøve kræfter med messaging efter
 # Further Reading
 - Microservices: https://blog.g2crowd.com/blog/trends/digital-platforms/2018-dp/microservices/
 - REST: https://en.wikipedia.org/wiki/Representational_state_transfer
+- SOAP: https://en.wikipedia.org/wiki/SOAP 
 - RabbitMQ: https://en.wikipedia.org/wiki/RabbitMQ
 - Why you should switch to messaging: https://dev.to/matteojoliveau/microservices-communications-why-you-should-switch-to-message-queues--48ia 
 - REST vs Messaging: https://solace.com/blog/products-tech/experience-awesomeness-event-driven-microservices 
 - You probably don’t need MQ: https://techblog.bozho.net/you-probably-dont-need-a-message-queue/ 
-- Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions af 
+- Bog: Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions
  
+
+Feedback
+
+Hvad er messaging, service, web server, kører i skyen?
+Hvad gør blocking i rest og messaging, kom med eventuelle beregninger på hvad forskellen i hastigheden er. 
+Vi skal læse om mere end vores fokusområde i forhold til data. 
+Mangler reference til nogle af vores kilde, bog. Referencer i teksten og i bunden. Ligesom vi gør i Outlook.
+Mangler benchmark, visuel data, se forskel på hvad gør det på at man har kobling her vs kobling her.  Request pr. second, webserver som kører microservice. Vi kan tilføje så store dataserver, asynkront vs synkront. 
+Skal vores blog i stedet handle om REST vs Messaging. 
+Skrive udelukkende og messaging og ikke indrage REST.
+
+
+
