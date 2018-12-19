@@ -33,6 +33,7 @@ Kilde: https://www.cloudamqp.com/blog/2014-12-03-what-is-message-queuing.html
 Messaging queues fungerer ved at man sender pakker af data til hinanden. Disse pakker bliver kaldt messages. 
 
 ![alt text](https://github.com/pwestdk/Messaging/blob/master/images/messaging2.png "Messaging 2")
+
 Kilde: https://aws.amazon.com/message-queue/ 
 
 En message består af en header og en body. Headeren indeholder meta-data om, hvem afsender er, hvor den skal hen osv. Headeren bliver primært brugt af messagingsystemet.
