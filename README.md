@@ -27,11 +27,13 @@ Systemerne der integreres kan benytte sig af forskellige programmeringssprog, OS
 Dette er også problemer messaging queues hjælper med at løse. 
 
 ![alt text](https://github.com/pwestdk/Messaging/blob/master/images/messaging1.png "Messaging 1")
+Kilde: https://www.cloudamqp.com/blog/2014-12-03-what-is-message-queuing.html 
 
 ## Hvordan fungerer messaging
 Messaging queues fungerer ved at man sender pakker af data til hinanden. Disse pakker bliver kaldt messages. 
 
 ![alt text](https://github.com/pwestdk/Messaging/blob/master/images/messaging2.png "Messaging 2")
+Kilde: https://aws.amazon.com/message-queue/ 
 
 En message består af en header og en body. Headeren indeholder meta-data om, hvem afsender er, hvor den skal hen osv. Headeren bliver primært brugt af messagingsystemet.
 Bodyen indeholder selve dataen og bliver primært brugt af modtager systemet. 
